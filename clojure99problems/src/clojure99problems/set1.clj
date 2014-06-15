@@ -20,3 +20,12 @@
     (last-but-one (rest list))
     )
   )
+
+(defn element-at
+  "P03 Find the K'th element of a list."
+  [list k]
+  (if (= k 1)
+    (first list)
+    (element-at (rest list) (- k 1))
+    )
+  )
