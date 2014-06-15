@@ -38,3 +38,9 @@
     (+ 1 (listsize (rest list)))
     )
   )
+
+(defn revlist
+  "P05 Reverse a list."
+  [list]
+  list
+  )

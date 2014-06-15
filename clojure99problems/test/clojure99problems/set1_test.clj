@@ -25,3 +25,9 @@
                   )
          )
 
+(deftest p5-revlist
+         (testing "p5 revlist"
+                  (is (= '() (revlist '())))
+                  (is (= '(2 1) (revlist '(1 2))))
+                  (is (= '(3 2 1) (revlist '(1 2 3))))
+                  ))
