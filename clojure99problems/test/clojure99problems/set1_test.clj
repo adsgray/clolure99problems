@@ -15,3 +15,13 @@
                   (is (= 4 (element-at '(1 2 3 4 5) 4)))
                   )
          )
+
+(deftest p4-listsize
+         (testing "p4 listsize"
+                  ; multiple assertions in a single deftest
+                  (is (= 0 (listsize '())))
+                  (is (= 1 (listsize '(42))))
+                  (is (= 5 (listsize '(1 2 3 4 5))))
+                  )
+         )
+

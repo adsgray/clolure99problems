@@ -29,3 +29,12 @@
     (element-at (rest list) (- k 1))
     )
   )
+
+(defn listsize
+  "P04 Find the number of elements of a list."
+  [list]
+  (if (empty? list)
+    0
+    (+ 1 (listsize (rest list)))
+    )
+  )
