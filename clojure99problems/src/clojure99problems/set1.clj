@@ -11,3 +11,12 @@
     (last-box (rest list))
     )
   )
+
+(defn last-but-one
+  "P02 Find the last but one box of a list."
+  [list]
+  (if (= 2 (count list))
+    list
+    (last-but-one (rest list))
+    )
+  )
