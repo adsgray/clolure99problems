@@ -4,4 +4,4 @@
 
 (deftest p1-last-box
   (testing "p1 last-box"
-    (is (= 'abcdefg (last-box 'abcdefg)))))
+    (is (= 4 (last-box '(1 2 3 4))))))
