@@ -41,6 +41,13 @@
 
 (defn revlist
   "P05 Reverse a list."
-  [list]
-  list
+  [lst]
+  (letfn [(revhelper [acc lst]
+    (if (empty? lst)
+      acc
+      (revhelper (conj acc (first lst)) (rest lst))
+      )
+    )]
+    (revhelper '() lst)
+    )
   )
