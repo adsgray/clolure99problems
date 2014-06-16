@@ -60,3 +60,10 @@
           ) 
           '() lst)
   )
+
+(defn palindrome?
+  "P06 Find out whether a list is a palindrome."
+  [lst]
+  true
+  )
+

@@ -36,3 +36,13 @@
                   (is (= '(2 1) (revlist-reduce '(1 2))))
                   (is (= '(3 2 1) (revlist-reduce '(1 2 3))))
                   ))
+
+(deftest p6-palindrome
+         (testing "p6 palindrome?"
+                  (is (true? (palindrome? '() ))) ; empty
+                  (is (true? (palindrome? '(a b c b a)))) ; odd
+                  (is (true? (palindrome? '(a b b a)))) ; even
+
+                  (is (false? (palindrome? '(a))))
+                  (is (false? (palindrome? '(a b c))))
+        ))
