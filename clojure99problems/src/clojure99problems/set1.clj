@@ -51,3 +51,12 @@
     (revhelper '() lst)
     )
   )
+
+(defn revlist-reduce
+  "P05 Reverse a list using reduce"
+  [lst]
+  (reduce (fn [acc item]
+          (conj acc item)
+          ) 
+          '() lst)
+  )

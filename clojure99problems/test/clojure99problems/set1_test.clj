@@ -30,4 +30,9 @@
                   (is (= '() (revlist '())))
                   (is (= '(2 1) (revlist '(1 2))))
                   (is (= '(3 2 1) (revlist '(1 2 3))))
+
+                  ; test the version that uses reduce as well:
+                  (is (= '() (revlist-reduce '())))
+                  (is (= '(2 1) (revlist-reduce '(1 2))))
+                  (is (= '(3 2 1) (revlist-reduce '(1 2 3))))
                   ))
