@@ -64,6 +64,10 @@
 (defn palindrome?
   "P06 Find out whether a list is a palindrome."
   [lst]
-  true
+  (cond
+    (<= (count lst) 1) true
+    (= (first lst) (last lst)) (palindrome? (rest (butlast lst))) ; this is the 'middle' of the list
+    :else false
+    )
   )
 

@@ -40,9 +40,9 @@
 (deftest p6-palindrome
          (testing "p6 palindrome?"
                   (is (true? (palindrome? '() ))) ; empty
+                  (is (true? (palindrome? '(a))))
                   (is (true? (palindrome? '(a b c b a)))) ; odd
                   (is (true? (palindrome? '(a b b a)))) ; even
 
-                  (is (false? (palindrome? '(a))))
                   (is (false? (palindrome? '(a b c))))
         ))
